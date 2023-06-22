@@ -1,0 +1,41 @@
+<div>
+  <header>
+    <h1>My Portfolio</h1>
+  </header>
+</div>
+
+<div>
+<mat-sidenav-container>
+
+  <mat-sidenav mode="side" opened>
+    <h3 class="name">Rashid K</h3>
+    <h3 class="designation">Software Engineer</h3>
+
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button" routerLink="/projects">
+      <mat-icon>group_work</mat-icon>
+      <span>Projects</span>
+    </button>
+    <mat-divider></mat-divider>
+    <button mat-button class="menu-button" routerLink="/skills">
+      <mat-icon>assessment</mat-icon>
+      <span>Skills</span>
+    </button>
+    <mat-divider></mat-divider>
+    <button mat-button class="menu-button" routerLink="/edu_exp">
+      <mat-icon>book</mat-icon>
+      <span>Education & Experience</span>
+    </button>
+    <mat-divider></mat-divider>
+    <button mat-button class="menu-button" routerLink="/contacts">
+      <mat-icon>contacts</mat-icon>
+      <span>Contacts</span>
+    </button>
+
+  </mat-sidenav>
+</mat-sidenav-container>
+<router-outlet>
+  
+</router-outlet>
+</div>

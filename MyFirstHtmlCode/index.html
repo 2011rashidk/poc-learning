@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <p1 id="timer" style="font-size: 18px; font-weight: bold; margin-bottom: 10px;"align="center">05:00</p1>
+    <!-- <a href="https://www.google.com/">Google</a>
+    <br>
+    <a href="https://www.google.com/">Google</a>
+    <br>
+    <a href="hello.html">Hello page</a>
+
+    <img src="https://dictionary.cambridge.org/images/thumb/book_noun_001_01679.jpg?version=5.0.318" alt="Notebook">
+
+    <img src="images/book_noun_001_01679.jpg" alt="Notebook">
+    <hr>
+
+    <p>H<sub>2</sub>O</p>
+    <p>mc<sup>2</sup></p>
+
+
+    <pre>Hello               world
+    How are you?        It's been a while
+    </pre>
+
+</head>
+
+<body>
+    <p>Hello world</p>
+</body -->
+
+    <header>
+
+<script>
+    function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = 0;
+            // Perform actions when the time expires
+            // For example, submit the form or display a message
+            alert("Time has expired!");
+            document.getElementById("question-form").submit();
+        }
+    }, 1000);
+}
+
+// Function to initialize the timer
+function initializeTimer(duration) {
+    var display = document.querySelector('#timer');
+    startTimer(duration, display);
+}
+
+// Call the initializeTimer function with the desired duration in seconds (5 minutes = 600 seconds)
+initializeTimer(300);
+</script>
+
+
+
+        <h1>My Portfolio</h1>
+    </header>
+    <main>
+
+        <section>
+            Education: BE(ISE)
+        </section>
+        <section>
+            Experience: Software engineering
+        </section>
+        <article>Sample article</article>
+        <aside>This is ad section</aside>
+        <a href="https://www.google.com" target="_main">Google</a>
+        <a href="https://www.google.com" target="_main"><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/800px-Google_2015_logo.svg.png"
+                height="70"></a>
+    </main>
+
+    <div style="background-color: plum;">
+        <p>Hello world</p>
+    </div>
+
+    <div style="background-color: aquamarine;">
+        <p>Welcome to coding</p>
+    </div>
+
+
+    <ul>
+        <li>Apple</li>
+        <ul>
+            <li>Color: Red</li>
+            <li>Season: Winter</li>
+        </ul>
+        <li>Mango</li>
+        <ul>
+            <li>Color: Yellow</li>
+            <li>Season: Summer</li>
+
+        </ul>
+    </ul>
+    <hr>
+    <ol>
+        <li>Apple</li>
+        <ul>
+            <li>Color: Red</li>
+            <li>Season: Winter</li>
+        </ul>
+        <li>Mango</li>
+        <ul>
+            <li>Color: Yellow</li>
+            <li>Season: Summer</li>
+
+        </ul>
+    </ol>
+
+
+    <table border="">
+        <thead>
+            <caption>Student record</caption>
+            <tr>
+                <th colspan="2">HTML University</th>
+            </tr>
+
+            <tr>
+                <th>Student name</th>
+                <th>Roll no.</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Rashid</td>
+                <td>101</td>
+            </tr>
+
+            <tr>
+                <td>Azam</td>
+                <td>102</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <form action=""> Hello there</form>
+    <input type="text" placeholder="username">
+    <input type="password" placeholder="password">
+
+    <hr>
+    <label for="101">
+        <input type="radio" value="sslc" name="class" id="101">SSLC
+    </label>
+    <label for="102">
+        <input type="radio" value="puc" name="class" id="102"> PUC
+    </label>
+    <br>
+    <label for="103">
+        <input type="checkbox" value="phy" name="subjects" id="103">Physics
+    </label>
+
+    <label for="104">
+        <input type="checkbox" value="chem" name="subjects" id="104">Chemistry
+    </label>
+
+    <label for="105">
+        <input type="checkbox" value="cs" name="subjects" id="105">Computer Science
+    </label>
+    <label for="106">
+        <input type="checkbox" value="math" name="subjects" id="106">Mathematics
+    </label>
+    <br>
+    <br>
+    <textarea name="feedback" placeholder="Enter your feedback" rows="4"></textarea>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <br>
+
+    <select name="city" id="110">
+        <option value="del">Delhi</option>
+        <option value="blr">Bangalore</option>
+        <option value="chn">Chennai</option>
+        <option value="knr">Kannur</option>
+    </select>
+    <input type="submit" value="Submit">
+
+    <iframe src="https://en.wikipedia.org/wiki/India" frameborder="10" height="500" width="500"></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LusTv0RlnSU" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
+
+        <video src="videos/sample.mp4" height="500" width="500" controls loop></video>
+
+    <footer>
+        <h6>rashid@gmail.com</h6>
+    </footer>
+
+</html>
